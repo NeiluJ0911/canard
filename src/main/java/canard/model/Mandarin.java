@@ -4,6 +4,7 @@ public class Mandarin extends Canard{
 	
 	public Mandarin(String nom) {
 			super(nom);
+			this.vol = new VolerAvecDesAiles();
 		}
 	
 	@Override
