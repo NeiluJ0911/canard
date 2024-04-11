@@ -1,6 +1,6 @@
 package canard.model;
 
-public class Coincoin implements ComportementCanCan{
+public class Coincoin implements ComportementCancan{
 
 	@Override
 	public String cancaner() {

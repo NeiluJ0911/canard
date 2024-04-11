@@ -75,5 +75,18 @@ class CanardTest {
 		assertEquals("Rubber", canardPlastique.getNom());
 		assertEquals("Je suis un canard en plastique", canardPlastique.afficher());
 	}
-
+	
+	@Test
+    public void test_changerComportementVol() {
+        ComportementVol nouveauComportementVol = new VolerAvecDesAiles();
+        colvert.changerComportementVol(nouveauComportementVol);
+        assertEquals(nouveauComportementVol, colvert.getVol());
+    }
+	
+	@Test
+    public void test_changerComportementCancan() {
+        ComportementCancan nouveauComportementCancan = new Coincoin();
+        colvert.changerComportementCancan(nouveauComportementCancan);
+        assertEquals(nouveauComportementCancan, colvert.getCancan());
+    }
 }

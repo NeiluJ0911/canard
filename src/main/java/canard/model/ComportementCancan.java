@@ -1,5 +1,5 @@
 package canard.model;
 
-public interface ComportementCanCan {
+public interface ComportementCancan {
 	public String cancaner();
 }

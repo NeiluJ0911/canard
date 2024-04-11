@@ -4,7 +4,7 @@ public abstract class Canard {
 	
 	protected String nom;
 	protected ComportementVol vol;
-	protected ComportementCanCan cancan;
+	protected ComportementCancan cancan;
 	
 	public Canard(String nom) {
 		this.nom = nom;
@@ -26,6 +26,22 @@ public abstract class Canard {
 
 	public String getNom() {
 		return this.nom;
+	}
+	
+	public ComportementVol getVol() {
+		return this.vol;
+	}
+	
+	public ComportementCancan getCancan() {
+		return this.cancan;
+	}
+	
+	public void changerComportementVol(ComportementVol vol) {
+		this.vol = vol;
+	}
+	
+	public void changerComportementCancan(ComportementCancan cancan) {
+		this.cancan = cancan;
 	}
 }
           
