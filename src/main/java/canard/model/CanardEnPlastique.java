@@ -5,6 +5,7 @@ public class CanardEnPlastique extends Canard{
 	public CanardEnPlastique(String nom) {
 		super(nom);
 		this.vol = new NePasVoler();
+		this.cancan = new Coincoin();
 	}
 
 	@Override

@@ -4,6 +4,7 @@ public class Colvert extends Canard {
     public Colvert(String nom) {
         super(nom);
         this.vol = new VolerAvecDesAiles();
+        this.cancan = new Cancan();
     }
 
     @Override

@@ -4,10 +4,13 @@ public abstract class Canard {
 	
 	protected String nom;
 	protected ComportementVol vol;
+	protected ComportementCanCan cancan;
 	
 	public Canard(String nom) {
 		this.nom = nom;
 	}
+	
+	public abstract String afficher();
 	
 	public String nager() {
 		return "Tous les canards flottent, même les leurres!";
@@ -17,9 +20,12 @@ public abstract class Canard {
 		return(vol.voler());
 	}
 	
-	public abstract String afficher();
+	public String effectuerCancan() {
+		return(cancan.cancaner());
+	}
 
 	public String getNom() {
 		return this.nom;
 	}
 }
+          
